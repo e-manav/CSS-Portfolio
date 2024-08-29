@@ -9,6 +9,14 @@ img {
     width: 300px;
 }
 
+a {
+    color: orange;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 /* Profile 
 * ------------------------------- */
 header {
@@ -24,6 +32,19 @@ header {
     color: #FFFCE8;
 }
 
+.projects .btn {
+    color: #F1F2F6;
+    background: #758BFD;
+    padding: 10px;
+    margin-inline: 5px;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.projects .btn:hover {
+    color: rgba(241, 242, 246, 80%);
+    background: rgba(117, 139, 253, 80%);
+}
 
 /* Work Experience  
 * ------------------------------- */
@@ -38,5 +59,6 @@ header {
 /* Contact info 
 * ------------------------------- */
 footer {
-    background: #EE964B;
+    color: #FFFCE8;
+    background: #333745;
 }

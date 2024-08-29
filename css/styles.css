@@ -2,7 +2,13 @@
 * ------------------------------ */
 
 body {
+    margin: 0;
     color: #343434;
+}
+
+h1,
+h2 {
+    margin: 0;
 }
 
 img {
@@ -13,8 +19,18 @@ a {
     color: orange;
 }
 
+ul {
+    margin: 0;
+}
+
 a:hover {
     text-decoration: none;
+}
+
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
 }
 
 /* Profile 
@@ -36,9 +52,9 @@ header {
     color: #F1F2F6;
     background: #758BFD;
     padding: 10px;
-    margin-inline: 5px;
     border-radius: 100px;
     text-decoration: none;
+    display: inline-block;
 }
 
 .projects .btn:hover {
@@ -54,7 +70,9 @@ header {
 
 /* Education 
 * ------------------------------- */
-
+.education {
+    background: #F7EE7F;
+}
 
 /* Contact info 
 * ------------------------------- */

@@ -1,14 +1,38 @@
 /* NOTE: Global styles
 * ------------------------------ */
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:left,
+*:right {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
+    padding: 0;
     color: #343434;
+    font-family: "Roboto Slab", serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 100px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 45px;
 }
 
 h1,
 h2 {
     margin: 0;
+    font-family: "Dancing Script", cursive;
 }
 
 img {
@@ -38,6 +62,7 @@ a:hover {
 header {
     background: #0D3B66;
     color: #FFFCE8;
+    text-align: center;
 }
 
 
@@ -62,10 +87,32 @@ header {
     background: rgba(117, 139, 253, 80%);
 }
 
+.project-items {
+    overflow: hidden;
+    border-bottom: 1px dashed gray;
+    padding: 25px 0;
+
+}
+
+.project-items img {
+    float: left;
+    margin-right: 20px;
+}
+
+.project-items h3 {
+    margin: 0;
+}
+
 /* Work Experience  
 * ------------------------------- */
 .work-experience {
     background: #B7D5D4;
+}
+
+.job-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
 }
 
 /* Education 
@@ -79,4 +126,17 @@ header {
 footer {
     color: #FFFCE8;
     background: #333745;
+    text-align: center;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.content-list a {
+    padding: 15px;
+    display: inline-block;
 }
